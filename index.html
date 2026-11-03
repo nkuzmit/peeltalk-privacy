@@ -102,7 +102,7 @@
 
     <header>
       <h1>Peel Talk — Privacy Policy</h1>
-      <p>Last updated: April 2026</p>
+      <p>Last updated: October 2026</p>
     </header>
 
     <h2>What this document covers</h2>
@@ -123,18 +123,30 @@
       </thead>
       <tbody>
         <tr><td>App opened</td><td>Nothing beyond the event itself</td></tr>
-        <tr><td>Session started</td><td>Starting heat setting, escalation on/off, card mode</td></tr>
-        <tr><td>Card drawn</td><td>Category, temperature level</td></tr>
-        <tr><td>Card passed</td><td>Category, temperature level</td></tr>
-        <tr><td>Card rated down</td><td>Category, temperature level</td></tr>
+        <tr><td>Session started</td><td>Starting heat, escalation speed, card mode, whether session was resumed</td></tr>
+        <tr><td>Card drawn</td><td>Card identifier, category, temperature level, heat setting, card mode, whether card was previously seen, whether it was a penalty draw, filter state</td></tr>
+        <tr><td>Card passed</td><td>Card identifier, category, temperature level, heat setting, card mode, filter state, whether it was a penalty draw</td></tr>
+        <tr><td>Card rated down</td><td>Card identifier, category, temperature level, whether it was a penalty draw</td></tr>
         <tr><td>Card saved</td><td>Category</td></tr>
+        <tr><td>Card unsaved</td><td>Category</td></tr>
+        <tr><td>Card share attempted</td><td>Category</td></tr>
+        <tr><td>Card shared</td><td>Category</td></tr>
         <tr><td>Session ended</td><td>Cards played, passed, saved, rated; session duration; average heat</td></tr>
-        <tr><td>Temperature rose</td><td>New temperature level</td></tr>
+        <tr><td>Temperature rose (auto)</td><td>New temperature level</td></tr>
+        <tr><td>Temperature changed (manual)</td><td>New temperature level</td></tr>
         <tr><td>Category filter toggled</td><td>Selected categories</td></tr>
         <tr><td>Settings changed</td><td>Which setting, new value (no content)</td></tr>
         <tr><td>Pack viewed</td><td>Pack identifier</td></tr>
-        <tr><td>Calibration answered</td><td>Answers to the two setup questions (context type, depth preference — no free text)</td></tr>
-        <tr><td>Calibration completed</td><td>Derived heat and escalation settings</td></tr>
+        <tr><td>Calibration started</td><td>Nothing beyond the event itself</td></tr>
+        <tr><td>Calibration question answered</td><td>Selected answer (predefined option — no free text)</td></tr>
+        <tr><td>Calibration completed</td><td>Selected answers, derived heat and escalation settings, where calibration was started from</td></tr>
+        <tr><td>Recalibrated</td><td>Previous and new answers</td></tr>
+        <tr><td>Calibration abandoned</td><td>Which question was last seen, and why (app backgrounded or back pressed)</td></tr>
+        <tr><td>Home screen viewed</td><td>Whether a resumable session exists</td></tr>
+        <tr><td>Home action</td><td>Action type: start, resume, start fresh, or open how-to-play</td></tr>
+        <tr><td>Session action</td><td>Action type: open how-to-play</td></tr>
+        <tr><td>Summary viewed</td><td>Cards played, passed, saved, rated; session duration; heat</td></tr>
+        <tr><td>Summary action</td><td>Action type: play again or back to home</td></tr>
       </tbody>
     </table>
 
